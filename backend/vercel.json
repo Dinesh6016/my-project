@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "functions": {
-    "Server.js": {
-      "runtime": "@vercel/node@3"
+  "builds": [
+    {
+      "src": "Server.js",
+      "use": "@vercel/node"
     }
-  },
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/Server.js" }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/Server.js"
+    }
   ]
 }
