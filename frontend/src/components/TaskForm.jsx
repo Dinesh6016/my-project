@@ -3,7 +3,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { X } from 'lucide-react';
 
-const API_URL = 'http://localhost:5000/api/tasks';
+const API_URL = `${import.meta.env.VITE_API_URL}/tasks`;
 
 const CATEGORIES = ['General', 'Math', 'Science', 'English', 'History', 'Project', 'Exam Prep', 'Other'];
 

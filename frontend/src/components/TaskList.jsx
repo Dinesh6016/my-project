@@ -4,7 +4,7 @@ import TaskItem from './TaskItem';
 import toast from 'react-hot-toast';
 import { ClipboardList } from 'lucide-react';
 
-const API_URL = 'http://localhost:5000/api/tasks';
+const API_URL = `${import.meta.env.VITE_API_URL}/tasks`;
 const PRIORITY_ORDER = { high: 0, medium: 1, low: 2 };
 
 const TaskList = ({ tasks, loading, onEdit, onRefresh, search = '', sort = 'newest' }) => {

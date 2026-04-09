@@ -6,7 +6,7 @@ import TaskForm from './TaskForm';
 import { LogOut, Plus, BookOpen, CheckCircle2, Clock, AlertTriangle } from 'lucide-react';
 import toast from 'react-hot-toast';
 
-const API_URL = 'http://localhost:5000/api/tasks';
+const API_URL = `${import.meta.env.VITE_API_URL}/tasks`;
 
 const StatCard = ({ icon: Icon, label, value, color }) => (
   <div className={`bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex items-center gap-4`}>
